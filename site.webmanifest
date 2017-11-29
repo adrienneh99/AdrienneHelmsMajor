@@ -1,0 +1,17 @@
+{
+    "background_color": "#1c5f69",
+    "theme_color": "#1c5f69",
+    "description": "Adrienne Helms Major Personal Website",
+    "dir": "ltr",
+    "display": "standalone",
+    ""icons": [{
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }],
+    "lang": "en-US",
+    "name": "Adrienne Helms Major",
+    "orientation": "portrait-primary",
+    "short_name": "Adrienne Helms Major",
+    "start_url": "adriennehelmsmajor/html/index.html"
+}
