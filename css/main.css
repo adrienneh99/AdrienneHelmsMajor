@@ -113,6 +113,34 @@ html, body {
     margin: 0;
 }
 
+h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+h4 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #a0a09f;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+hr {
+    height: 50px;
+    background-color: #1c5f69;
+    margin: 0;
+    /*border: 0;*/
+    /*background-image: linear-gradient(to right, rgba(28, 95, 105, 0), rgba(28, 95, 105, 0.75), rgba(28, 95, 105, 0));*/
+}
 
 
 
@@ -120,48 +148,60 @@ html, body {
 #pageheader {
     height: 100px;
     position: fixed;
+    /*specifies the distance between the header's right edge
+    and the right edge of its containing block (ie, the body)*/
     right: 0;
+    /*specifies the distance between the header's left edge
+    and the left edge of its containing block (ie, the body)*/
     left: 0;
-    background-color: #ffffff;
-    font-size: 11px;
-    font-weight: 800;
+    background-color: #1c5f69;
 }
 
 /*header > nav*/
 #headercontainer {
+    margin: 0px 100px;
     display: flex;
     justify-content: space-around;
 }
 
 /*header > nav > span*/
 #headername {
-    line-height: 100px;
-    padding: 0px 10px;
-    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 100px;
 }
 
 /*header > nav > ahref*/
 #headercontainer a{
-    width: 65px;
-    line-height: 100px;
-    padding: 0px 10px;
-    margin-right: 20px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #efefef;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #a0a09f;
+    letter-spacing: 1px;
+    line-height: 100px;
 }
 
 /*header > nav > ahref - active*/
 #headercontainer a.active {
-    color: #1c5f69;
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 /*header > nav > ahref - hover*/
 #headercontainer a:hover {
+    font-size: 13px;
     font-weight: 800;
-    color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.3s;
 }
 
 .push {
@@ -169,30 +209,36 @@ html, body {
 }
 
 
-
 /*FOOTER*/
 footer {
-    height: 100%;
+    height: 100px;
+    background-color: #1c5f69;
     text-align-all: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer a {
+    padding: 0px 15px;
+}
 
 
 /*BODY*/
 .pagebody {
+    min-height: 100%;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-    min-height: 100%;
 }
 
 
-/*HOME STRIP 1: Australia Pic & White Container Box*/
-#homestrip1 {
+/*HOME STRIP 1: AU PIC*/
+#homeaupic {
     max-width: 100%;
-    height: 650px;
+    height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/01_home.jpg);
+    background-image: url(../img/01_home_3000x2000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -218,17 +264,17 @@ footer {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    line-height: 4;
     letter-spacing: 1.5px;
+    line-height: 4;
 }
 
 #jobtitle {
     font-size: 40px;
     font-weight: 800;
-    text-transform: uppercase;
     text-align: center;
-    line-height: 1;
+    text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 1;
 }
 
 #availableforhire {
@@ -244,14 +290,124 @@ footer {
     color: #dec328;
 }
 
+
 /*HOME STRIP 2: HELLO & WELCOME*/
-#homestrip2 {
-    padding: 20px;
+#helloandwelcome {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#helloandwelcometext {
+    margin-right: 150px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 #moreaboutmebutton {
-    background-color: #cccccc;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: #efefef;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+#moreaboutmebutton:hover {
+    background-color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+/*HOME STRIP 3: MY APPS*/
+#myapps {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apphoverboxes {
+    width: 265px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+
+/*HOME STRIP 4: TESTIMONIALS*/
+#testimonials {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonialgroup {
+    margin-right: 150px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+.testimonial {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.testimonialauthor {
+    font-size: 13px;
+    font-weight: 400;
+    color: #a0a09f;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/*HOME STRIP 5: WHAT I'M LOOKING FOR*/
+#whatiwant {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#whatiwantgroup {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#companyqualities {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+#finalcomment {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
 
 /*White container box on Fun Facts, Portfolio, Resume & Contact pages*/
 .containerbox {
@@ -274,12 +430,12 @@ footer {
     letter-spacing: 2px;
 }
 
-/*ABOUT STRIP 1: Australia Pic & White Container Box*/
-#aboutsection1 {
+/*ABOUT STRIP 1: AU PIC*/
+#aboutaupic {
     max-width: 100%;
-    height: 650px;
+    height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/02_about.jpg);
+    background-image: url(../img/02_about_3000x1800.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -289,28 +445,64 @@ footer {
     align-items: flex-start;
  }
 
-
-/*PORTFOLIO STRIP 1: Australia Pic & White Container Box*/
-#portfoliosection1 {
+/*ABOUT STRIP 2: MY CLOSE FRIENDS DESCRIBE ME AS*/
+#myclosefriends {
     max-width: 100%;
-    height: 650px;
-    background-color: #1c5f69;
-    background-image: url(../img/03_portfolio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 0px 150px 50px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*RESUME STRIP 1: Australia Pic & White Container Box*/
-#resumesection1 {
+#myclosefriendslist {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+/*ABOUT STRIP 3: I'M CURRENTLY WATCHING*/
+#currentlywatching {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ABOUT STRIP 4: THE BEST PIECE OF ADVICE...*/
+#bestadvice {
+
+}
+
+/*ABOUT STRIP 5: MY DREAM JOB*/
+#dreamjob {
+
+}
+
+/*ABOUT STRIP 6: I CAN'T LIVE WITHOUT*/
+#cantlivewithout {
+
+}
+
+/*ABOUT STRIP 7: A FEW OTHER THINGS...*/
+#afewotherthings {
+
+}
+
+/*ABOUT STRIP 8: IF YOU REALLY WANT TO KNOW...*/
+#enfj {
+
+}
+
+
+/*PORTFOLIO STRIP 1: AU PIC*/
+#portfolioaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/04_resume.jpg);
+    background-image: url(../img/03_portfolio_3000x1800.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -320,12 +512,115 @@ footer {
     align-items: flex-start;
 }
 
-/*CONTACT STRIP 1: Australia Pic & White Container Box*/
-#contactsection1 {
+/*App description for Fitness Zone, Pingora Intranet
+and Travel Manager*/
+.appdescription {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*Tools used for Fitness Zone, Pingora Intranet
+and Travel Manager*/
+.toolsused {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*Github project link for Fitness Zone, Pingora
+Intranet and Travel Manager*/
+.projectgithublink {
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*PORTFOLIO STRIP 2: FITNESS ZONE*/
+#fitnesszone {
+    max-width: 100%;
+}
+
+#fitnesszonegroup {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fitnesszoneimages > img {
+    width: 250px;
+    height: 450px;
+    margin-right: 25px;
+}
+
+#keyachievements {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*PORTFOLIO STRIP 3: PINGORA INTRANET*/
+#pingoraintranet {
+    max-width: 100%;
+}
+
+#pingoraintranetgroup {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pingoraintranetimages > img {
+    width: 450px;
+    height: 560px;
+    margin-right: 25px;
+}
+
+/*PORTFOLIO STRIP 4: TRAVEL MANAGER*/
+#travelmanager {
+    max-width: 100%;
+}
+
+#travelmanagergroup {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#travelmanagerimages > img {
+    width: 450px;
+    height: 300px;
+    margin-right: 25px;
+}
+
+
+
+/*RESUME STRIP 1: AU PIC*/
+#resumeaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/05_contact.jpg);
+    background-image: url(../img/04_resume_3000x2000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -336,6 +631,47 @@ footer {
 }
 
 
+/*RESUME STRIP 2: TECHNICALSKILLS*/
+#technicalskills {
+
+}
+
+/*RESUME STRIP 3: RELEVANT COURSES*/
+#relevantcourses {
+
+}
+
+/*RESUME STRIP 4: EDUCATION*/
+#education {
+
+}
+
+/*RESUME STRIP 5: WORK EXPERIENCE*/
+#workexperience {
+
+}
+
+
+/*CONTACT STRIP 1: AU PIC*/
+#contactaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/05_contact_3000x1800.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/*CONTACT STRIP 2: I'M DEDICATED TO MAKE A DIFFERENCE...*/
+#imdedicated {
+
+}
 
 
 
