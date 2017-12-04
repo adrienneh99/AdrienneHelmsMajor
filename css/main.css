@@ -7,7 +7,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   BASE STYLES: OPINIONATED DEFAULTS
    ========================================================================== */
 
 html {
@@ -80,7 +80,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
+   BROWSER UPGRADE PROMPT
    ========================================================================== */
 
 .browserupgrade {
@@ -91,7 +91,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   AUTHOR'S CUSTOM STYLES
    ========================================================================== */
 
 /*makes all font: 1st Nunito Sans, Regular (if available), 2nd Verdana (if available) */
@@ -106,7 +106,6 @@ textarea {
 /*}*/
 
 
-
 html, body {
     width: 100%;
     height: 100%;
@@ -115,7 +114,19 @@ html, body {
 
 h2 {
     margin-top: 50px;
+    margin-bottom: 25px;
     font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 25px;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -144,7 +155,7 @@ hr {
 
 
 
-/*HEADER*/
+/*========== HEADER ==========*/
 #pageheader {
     height: 100px;
     position: fixed;
@@ -209,7 +220,7 @@ hr {
 }
 
 
-/*FOOTER*/
+/*========== FOOTER ==========*/
 footer {
     height: 100px;
     background-color: #1c5f69;
@@ -224,7 +235,7 @@ footer a {
 }
 
 
-/*BODY*/
+/*========== BODY ==========*/
 .pagebody {
     min-height: 100%;
     padding-top: 100px;
@@ -233,12 +244,12 @@ footer a {
 }
 
 
-/*HOME STRIP 1: AU PIC*/
+/*========== HOME STRIP 1: AU PIC ==========*/
 #homeaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/01_home_3000x2000.jpg);
+    background-image: url(../img/au_01_home.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -291,7 +302,7 @@ footer a {
 }
 
 
-/*HOME STRIP 2: HELLO & WELCOME*/
+/*========== HOME STRIP 2: HELLO & WELCOME ==========*/
 #helloandwelcome {
     max-width: 100%;
     display: flex;
@@ -329,7 +340,7 @@ footer a {
     transition-duration: 0.5s;
 }
 
-/*HOME STRIP 3: MY APPS*/
+/*========== HOME STRIP 3: MY APPS ==========*/
 #myapps {
     max-width: 100%;
     display: flex;
@@ -344,7 +355,7 @@ footer a {
 }
 
 
-/*HOME STRIP 4: TESTIMONIALS*/
+/*========== HOME STRIP 4: TESTIMONIALS ==========*/
 #testimonials {
     max-width: 100%;
     display: flex;
@@ -375,17 +386,12 @@ footer a {
 }
 
 
-/*HOME STRIP 5: WHAT I'M LOOKING FOR*/
+/*========== HOME STRIP 5: WHAT I'M LOOKING FOR ==========*/
 #whatiwant {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#whatiwantgroup {
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 #companyqualities {
@@ -399,8 +405,8 @@ footer a {
 
 #finalcomment {
     margin-right: 100px;
-    margin-left: 100px;
     margin-bottom: 50px;
+    margin-left: 100px;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
@@ -426,16 +432,16 @@ footer a {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
-    line-height: 2;
     letter-spacing: 2px;
+    line-height: 2;
 }
 
-/*ABOUT STRIP 1: AU PIC*/
+/*========== ABOUT STRIP 1: AU PIC ==========*/
 #aboutaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/02_about_3000x1800.jpg);
+    background-image: url(../img/au_02_about.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -445,13 +451,25 @@ footer a {
     align-items: flex-start;
  }
 
-/*ABOUT STRIP 2: MY CLOSE FRIENDS DESCRIBE ME AS*/
+/*========== ABOUT STRIP 2: MY CLOSE FRIENDS DESCRIBE ME AS ==========*/
 #myclosefriends {
     max-width: 100%;
-    margin: 0px 150px 50px;
+}
+
+#myclosefriendsgroup {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+}
+
+#myclosefriendsgroup > img {
+    width: 140px;
+    height: 150px;
+    margin-right: 25px;
 }
 
 #myclosefriendslist {
@@ -463,46 +481,144 @@ footer a {
     list-style-type: none;
 }
 
-/*ABOUT STRIP 3: I'M CURRENTLY WATCHING*/
+/*========== ABOUT STRIP 3: I'M CURRENTLY WATCHING ==========*/
 #currentlywatching {
     max-width: 100%;
+}
+
+#currentlywatching > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/*========== ABOUT STRIP 4: THE BEST PIECE OF ADVICE... ==========*/
+#bestadvice {
+    max-width: 100%;
+}
+
+#bestadvice > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/*========== ABOUT STRIP 5: MY DREAM JOB ==========*/
+#dreamjob {
+    max-width: 100%;
+}
+
+#dreamjob > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/*========== ABOUT STRIP 6: I CAN'T LIVE WITHOUT ==========*/
+#cantlivewithout {
+    max-width: 100%;
+}
+
+#cantlivewithoutgroup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-/*ABOUT STRIP 4: THE BEST PIECE OF ADVICE...*/
-#bestadvice {
-
+#cantlivewithoutgroup > ul {
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    list-style-type: none;
 }
 
-/*ABOUT STRIP 5: MY DREAM JOB*/
-#dreamjob {
-
+.flexslider {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
-/*ABOUT STRIP 6: I CAN'T LIVE WITHOUT*/
-#cantlivewithout {
-
+.slides img {
+    width: 500px;
+    height: 400px;
 }
 
-/*ABOUT STRIP 7: A FEW OTHER THINGS...*/
+
+/*========== ABOUT STRIP 7: A FEW OTHER THINGS... ==========*/
 #afewotherthings {
-
+    max-width: 100%;
 }
 
-/*ABOUT STRIP 8: IF YOU REALLY WANT TO KNOW...*/
+#afewotherthings > ul {
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+
+/*========== ABOUT STRIP 8: IF YOU REALLY WANT TO KNOW... ==========*/
 #enfj {
+    max-width: 100%;
+}
 
+#enfj > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+#enfjbutton {
+    border: none;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+#enfjbutton:hover {
+    background-color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.5s;
 }
 
 
-/*PORTFOLIO STRIP 1: AU PIC*/
+/*========== PORTFOLIO STRIP 1: AU PIC ==========*/
 #portfolioaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/03_portfolio_3000x1800.jpg);
+    background-image: url(../img/au_03_portfolio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -545,7 +661,7 @@ Intranet and Travel Manager*/
     line-height: 1.5;
 }
 
-/*PORTFOLIO STRIP 2: FITNESS ZONE*/
+/*========== PORTFOLIO STRIP 2: FITNESS ZONE ==========*/
 #fitnesszone {
     max-width: 100%;
 }
@@ -573,7 +689,7 @@ Intranet and Travel Manager*/
     line-height: 1.5;
 }
 
-/*PORTFOLIO STRIP 3: PINGORA INTRANET*/
+/*========== PORTFOLIO STRIP 3: PINGORA INTRANET ==========*/
 #pingoraintranet {
     max-width: 100%;
 }
@@ -593,7 +709,7 @@ Intranet and Travel Manager*/
     margin-right: 25px;
 }
 
-/*PORTFOLIO STRIP 4: TRAVEL MANAGER*/
+/*========== PORTFOLIO STRIP 4: TRAVEL MANAGER ==========*/
 #travelmanager {
     max-width: 100%;
 }
@@ -614,13 +730,12 @@ Intranet and Travel Manager*/
 }
 
 
-
-/*RESUME STRIP 1: AU PIC*/
+/*========== RESUME STRIP 1: AU PIC ==========*/
 #resumeaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/04_resume_3000x2000.jpg);
+    background-image: url(../img/au_04_resume.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -631,33 +746,33 @@ Intranet and Travel Manager*/
 }
 
 
-/*RESUME STRIP 2: TECHNICALSKILLS*/
+/*========== RESUME STRIP 2: TECHNICAL SKILLS ==========*/
 #technicalskills {
 
 }
 
-/*RESUME STRIP 3: RELEVANT COURSES*/
+/*========== RESUME STRIP 3: RELEVANT COURSES ==========*/
 #relevantcourses {
 
 }
 
-/*RESUME STRIP 4: EDUCATION*/
+/*========== RESUME STRIP 4: EDUCATION ==========*/
 #education {
 
 }
 
-/*RESUME STRIP 5: WORK EXPERIENCE*/
+/*========== RESUME STRIP 5: WORK EXPERIENCE ==========*/
 #workexperience {
 
 }
 
 
-/*CONTACT STRIP 1: AU PIC*/
+/*========== CONTACT STRIP 1: AU PIC ==========*/
 #contactaupic {
     max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
-    background-image: url(../img/05_contact_3000x1800.jpg);
+    background-image: url(../img/au_05_contact.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -668,12 +783,14 @@ Intranet and Travel Manager*/
 }
 
 
-/*CONTACT STRIP 2: I'M DEDICATED TO MAKE A DIFFERENCE...*/
-#imdedicated {
+/*========== CONTACT STRIP 2: I'M DEDICATED TO MAKE A DIFFERENCE... ==========*/
+#contacttext {
 
 }
 
+#contactform {
 
+}
 
 
 
@@ -683,7 +800,7 @@ Intranet and Travel Manager*/
 
 
 /* ==========================================================================
-   Helper classes
+   HELPER CLASSES
    ========================================================================== */
 
 /*
@@ -765,7 +882,7 @@ Intranet and Travel Manager*/
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   EXAMPLE: MEDIA QUERIES FOR RESPONSIVE DESIGN.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
@@ -782,7 +899,7 @@ Intranet and Travel Manager*/
 }
 
 /* ==========================================================================
-   Print styles.
+   PRINT STYLES.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */

@@ -21,6 +21,38 @@
 
         <!--Varela font-->
         <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
+
+        <!--Flexslider 2.6.4 - use for development (https://cdnjs.com/libraries/flexslider)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/flexslider.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider.js"></script>
+
+        <!--Flexslider 2.6.4 min - use for production (https://cdnjs.com/libraries/flexslider)-->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/flexslider.min.css" />-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider.min.js"></script>-->
+
+        <script>
+            $(function () {
+                $('.flexslider').flexslider({
+                    //Default settings
+                    animation: "fade",
+                    animationLoop: true,
+                    smoothHeight: true,
+                    startAt: 0,
+                    slideshow: true,
+                    slideshowSpeed: 4000,
+                    animationSpeed: 1000,
+                    initDelay: 0,
+                    randomize: true,
+                    //Usability features
+                    useCSS: true,
+                    //Primary controls
+                    controlNav: false
+                });
+            });
+        </script>
+
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -52,97 +84,145 @@
             <hr>
 
             <section id="myclosefriends">
-                <h2>My Close Friends Describe Me As...</h2>
-                <ul id="myclosefriendslist">
-                    <li>Dedicated</li>
-                    <li>Focused</li>
-                    <li>Versatile</li>
-                    <li>A Team Player</li>
-                </ul>
+                <h3>My Close Friends Describe Me As...</h3>
+                <div id="myclosefriendsgroup">
+                    <img src="../img/img_ahm.jpg">
+                    <ul id="myclosefriendslist">
+                        <li>Dedicated</li>
+                        <li>Focused</li>
+                        <li>Versatile</li>
+                        <li>A Team Player</li>
+                    </ul>
+                </div>
             </section>
 
             <hr>
 
             <section id="currentlywatching">
-                <h2>I'm Currently Watching...</h2>
-                <p>
-                    Stranger Things 2 <br/>
-                    Grey's Anatomy <br/>
-                    Wisdom of the Crowd
-                </p>
+                <h3>I'm Currently Watching...</h3>
+                <div>
+                    Stranger Things 2, Grey's Anatomy, The Good Doctor & Wisdom of the Crowd
+                </div>
             </section>
 
             <hr>
 
             <section id="bestadvice">
-                <h2>The Best Piece Of Advice I Ever Received...</h2>
-                <p>
+                <h3>The Best Piece Of Advice I Ever Received...</h3>
+                <div>
                     "Just try. The worst thing they can say is no." (Thanks Mom!)
-                </p>
+                </div>
             </section>
 
             <hr>
 
             <section id="dreamjob">
-                <h2>My Dream Job...</h2>
-                <p>
+                <h3>My Dream Job...</h3>
+                <div>
                     Is to be a professional singer. Karaoke anyone?
-                </p>
+                </div>
             </section>
 
             <hr>
 
             <section id="cantlivewithout">
-                <h2>I Can't Live Without...</h2>
-                <p>
-                    Cherry Lime La Croix <br/>
-                    My friends & family <br/>
-                    Excel <br/>
-                    Bubbly <br/>
-                    Games & puzzles (especially Mahjong) <br/>
-                    My cordless Dyson <br/>
-                    Chocolate <br/>
-                    Houzz & HGTV <br/>
-                    Traveling (favorite place is Australia) <br/>
-                    My husband (because he makes me laugh) <br/>
-                    Vinny & Folsom (my furbabies)
-                </p>
+                <h3>I Can't Live Without...</h3>
+                <div id="cantlivewithoutgroup">
+                    <ul>
+                        <li>Cherry Lime La Croix</li>
+                        <li>My friends & family</li>
+                        <li>Games & puzzles (especially Mahjong)</li>
+                        <li>Chocolate</li>
+                        <li>My husband (because he makes me laugh)</li>
+                        <li>Houzz & HGTV</li>
+                        <li>Bubbly</li>
+                        <li>Vinny & Folsom (my furbabies)</li>
+                        <li>Traveling (favorite place is Australia)</li>
+                        <!--<li>Excel</li>-->
+                        <!--<li>My cordless Dyson</li>-->
+                    </ul>
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li><img src="../img/img_family_01.JPG"/></li>
+                            <li><img src="../img/img_family_02.jpg"/></li>
+                            <li><img src="../img/img_family_03.jpg"/></li>
+                            <li><img src="../img/img_family_04.jpg"/></li>
+                            <li><img src="../img/img_folsom_01.jpg"/></li>
+                            <li><img src="../img/img_folsom_02.jpg"/></li>
+                            <li><img src="../img/img_folsom_03.jpg"/></li>
+                            <li><img src="../img/img_folsom_04.jpg"/></li>
+                            <li><img src="../img/img_folsom_05.jpg"/></li>
+                            <li><img src="../img/img_folsom_vinny_01.jpg"/></li>
+                            <li><img src="../img/img_folsom_vinny_02.jpg"/></li>
+                            <li><img src="../img/img_folsom_vinny_03.jpg"/></li>
+                            <li><img src="../img/img_friends_01.JPG"/></li>
+                            <li><img src="../img/img_friends_02.JPG"/></li>
+                            <li><img src="../img/img_friends_03.jpg"/></li>
+                            <li><img src="../img/img_vinny_01.jpg"/></li>
+                            <li><img src="../img/img_vinny_02.jpg"/></li>
+                            <li><img src="../img/img_vinny_03.jpg"/></li>
+                            <li><img src="../img/img_vinny_04.jpg"/></li>
+                            <li><img src="../img/img_vinny_05.jpg"/></li>
+                            <li><img src="../img/img_vinny_06.jpg"/></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <hr>
 
             <section id="afewotherthings">
-                <h2>A Few Other Things You Should Know About Me...</h2>
-                <p>
-                    I believe that effective communication is the key to every successful relationship. <br/>
-                    I appreciate directness and I'm receptive to constructive criticism. <br/>
-                    I'm open-minded and respectful of other's opinions, even if they differ from my own. <br/>
-                    I sincerely believe that all the world's problems could be solved if we could walk in each other's
-                    shoes for a day.
-                </p>
+                <h3>A Few Other Things You Should Know About Me...</h3>
+                <ul>
+                    <li>I believe that effective communication is the key to every successful relationship.</li>
+                    <li>I appreciate directness and I'm receptive to constructive criticism.</li>
+                    <li>I'm open-minded and respectful of other's opinions, even if they differ from my own.</li>
+                    <li>I believe the world's problems could be solved if we walked in each other's shoes for a day.</li>
+                </ul>
             </section>
 
             <hr>
 
             <section id="enfj">
-                <h2>If You Really Want To Know What Makes Me Tick...</h2>
-                <p>
-                    Check this out: <a href="https://www.16personalities.com/enfjs-at-work" target="_blank">ENFJ</a>
-                </p>
+                <h3>If You Really Want To Know What Makes Me Tick...</h3>
+                <div>
+                    Check this out:
+                    <a href="https://www.16personalities.com/enfjs-at-work" target="_blank">
+                        <button id="enfjbutton">ENFJ</button>
+                    </a>
+                </div>
             </section>
 
         </main>
 
         <footer>
             <a href="https://www.linkedin.com/in/adriennehelmsmajor/" target="_blank">
-                <img src="../img/ic_linkedin_tm_white_39x28.png">
+                <img src="../img/ic_linkedin_tm_white.png">
             </a>
             <a href="https://github.com/adrienneh99" target="_blank">
-                <img src="../img/ic_github_mark_32x32.png">
+                <img src="../img/ic_github_mark.png">
             </a>
-            <a href="contact.html#contactstrip2" target="_blank">
-                <img src="../img/ic_email_white_36x36.png">
+            <a href="contact.html#contactform" target="_blank">
+                <img src="../img/ic_email_white.png">
             </a>
         </footer>
+
+        <!-- Modernizr JS library & Polyfills -->
+        <!--<script src="../js/vendor/modernizr-3.5.0.min.js"></script>-->
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
+                <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="-->
+                <!--crossorigin="anonymous">-->
+        <!--</script>-->
+        <!--<script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+        <!--<script src="../js/plugins.js"></script>-->
+        <!--<script src="../js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!--<script>-->
+            <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
+            <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
+        <!--</script>-->
+        <!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+
     </body>
 </html>
