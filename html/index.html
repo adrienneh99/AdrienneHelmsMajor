@@ -11,17 +11,17 @@
         <link rel="apple-touch-icon" href="../icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
+        <!--<link rel="stylesheet" href="../css/normalize.css">-->
+        <!--<link rel="stylesheet" href="../css/main.css">-->
+        <link rel="stylesheet" href="../css/custom.css">
 
         <script src="../js/main.js"></script>
 
         <!--Nunito Sans: extra-light 200, light 300, regular 400, semi-bold 600, bold 700, extra-bold 800, black 900-->
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
-        <!--Varela font-->
-        <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
     </head>
+
     <body>
         <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
@@ -48,7 +48,9 @@
                     <div id="name">Adrienne Helms Major</div>
                     <div id="jobtitle">Web & Android Developer</div>
                     <div id="availableforhire">
-                        <span class="highlight">{</span> available for hire <span class="highlight">}</span>
+                        <span class="highlight">{</span>
+                        <span>available for hire</span>
+                        <span class="highlight">}</span>
                     </div>
                 </div>
             </section>
@@ -82,44 +84,67 @@
 
             <section id="myapps">
                 <h2>My Apps</h2>
-                <div>
-                    <button class="apphoverboxes">Fitness Zone</button>
-                    <button class="apphoverboxes">Pingora Intranet</button>
-                    <button class="apphoverboxes">Travel Manager</button>
+                <div id="myappscontainer">
+
+                    <div id="myappsfitnesszone">
+                        <div class="appbox">
+                            <span class="appname">Fitness Zone</span>
+                            <span class="apptype">Android Mobile App</span>
+                            <a href="portfolio.html#fitnesszoneanchor" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <div id="myappspingoraintranet">
+                        <div class="appbox">
+                            <span class="appname">Pingora Intranet</span>
+                            <span class="apptype">Website</span>
+                            <a href="portfolio.html#pingoraintranetanchor" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <div id="myappstravelmanager">
+                        <div class="appbox">
+                            <span class="appname">Travel Manager</span>
+                            <span class="apptype">Desktop & Web App</span>
+                            <a href="portfolio.html#travelmanageranchor" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
                 </div>
+
             </section>
 
             <hr>
 
             <section id="testimonials">
                 <h2>Testimonials</h2>
-                <div id="testimonialgroup">
-                    <div class="testimonial">
-                        "Adrienne is an intelligent and motivated individual. She is extremely hard working and very
-                        capable of excelling in any industry."
-                    </div>
-                    <div class="testimonialauthor">
-                        Paul B. Jackson, CFA | President | Aegis Asset Management, Inc. & Westcott Securities, LLC
-                    </div>
-                    <br/>
-                    <div class="testimonial">
-                        "Adrienne’s ability to transition from one role to the next has proved instrumental. She earns
-                        continuous praise from advisors and clients alike for her positive attitude and expertise. In
-                        addition to exhibiting a genuine enthusiasm for going the extra mile, Adrienne has been active
-                        in developing the talents of others. She is an asset to the office and a true pleasure to work
-                        with."
-                    </div>
-                    <div class="testimonialauthor">
-                        Alyson Eaton | Manager, Private Client Services | Bernstein Global Wealth Management
-                    </div>
-                    <br/>
-                    <div class="testimonial">
-                        "Adrienne was extremely helpful to me in my practice. Adrienne is very knowledgeable about
-                        running a professional office and is very intelligent."
-                    </div>
-                    <div class="testimonialauthor">
-                        Jeffrey Fryer | Vice President | Bernstein Global Wealth Management
-                    </div>
+                <div class="testimonial">
+                    "Adrienne is an intelligent and motivated individual. She is extremely hard working and very
+                    capable of excelling in any industry."
+                </div>
+                <div class="testimonialauthor">
+                    Paul B. Jackson, CFA | President | Aegis Asset Management, Inc. & Westcott Securities, LLC
+                </div>
+                <br/>
+                <br/>
+                <div class="testimonial">
+                    "Adrienne’s ability to transition from one role to the next has proved instrumental. She earns
+                    continuous praise from advisors and clients alike for her positive attitude and expertise. In
+                    addition to exhibiting a genuine enthusiasm for going the extra mile, Adrienne has been active
+                    in developing the talents of others. She is an asset to the office and a true pleasure to work
+                    with."
+                </div>
+                <div class="testimonialauthor">
+                    Alyson Eaton | Manager, Private Client Services | Bernstein Global Wealth Management
+                </div>
+                <br/>
+                <br/>
+                <div class="testimonial">
+                    "Adrienne was extremely helpful to me in my practice. Adrienne is very knowledgeable about
+                    running a professional office and is very intelligent."
+                </div>
+                <div class="testimonialauthor">
+                    Jeffrey Fryer | Vice President | Bernstein Global Wealth Management
                 </div>
             </section>
 
@@ -127,22 +152,19 @@
 
             <section id="whatiwant">
                 <h2>What I'm Looking For</h2>
-                <ul id="companyqualities">
-                    <li>
-                        A collaborative, creative, and fast paced environment.
-                    </li>
-                    <li>
-                        A place where I can learn from my colleagues and grow as a software engineer.
-                    </li>
-                    <li>
+                <div id="companyqualities">
+                    <div>A collaborative, creative, and fast paced environment.</div>
+                    <div>A place where I can learn from my colleagues and grow as a software engineer.</div>
+                    <div>
                         A company that rewards hard work and balances it with a flexible, fun, and casual
                         atmosphere.
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         A transparent culture that prioritizes business goals above personal career interests...No
                         politics please.
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <br/>
                 <div id="finalcomment">
                     Let's chat about how I can help!
                 </div>

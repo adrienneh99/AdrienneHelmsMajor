@@ -1,0 +1,685 @@
+/* ==========================================================================
+   AUTHOR'S CUSTOM STYLES
+   ========================================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /*makes all font: 1st Nunito Sans Regular (if available), 2nd Verdana (if available) */
+    font-family: 'Nunito Sans', Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c5f69;
+}
+
+/*
+ *Home: Hello & Welcome, My Apps, Testimonials, What I'm Looking For
+ *Portfolio: Fitness Zone, Pingora Intranet, Travel Manager
+ *Resume: Technical Skills, Relevant Courses, Education...
+ */
+h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*
+ *Fun Facts: All Section Headers
+ */
+h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*
+ *Portfolio: Android Mobile App, Fictional Website, Desktop & Web App
+ *Resume: Programming Languages...Regis University...2013-2016
+ *Contact: I'm dedicated to make a difference...
+ */
+h4 {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0.5;
+}
+
+hr {
+    height: 50px;
+    margin: 0;
+    background-color: #1c5f69;
+}
+
+/*==================== HEADER ====================*/
+#pageheader {
+    height: 100px;
+    position: fixed;
+    /*specifies the distance between the header's right edge
+    and the right edge of its containing block (ie, the body)*/
+    right: 0;
+    /*specifies the distance between the header's left edge
+    and the left edge of its containing block (ie, the body)*/
+    left: 0;
+    background-color: #1c5f69;
+}
+
+#headercontainer {
+    margin-top: 0;
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#headername {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 100px;
+}
+
+#headercontainer a{
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 100px;
+}
+
+/*header > nav > ahref - active*/
+#headercontainer a.active {
+    opacity: 1;
+}
+
+/*header > nav > ahref - hover*/
+#headercontainer a:hover {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.push {
+    margin-left: auto;
+}
+
+/*==================== FOOTER ====================*/
+footer {
+    height: 100px;
+    background-color: #1c5f69;
+    text-align-all: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    opacity: 0.5;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+/*==================== BODY ====================*/
+.pagebody {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*==================== HOME ====================*/
+#homeaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/au_01_home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*White container box on Home page*/
+#containerboxhome {
+    width: 740px;
+    height: 240px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+#jobtitle {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#availableforhire {
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffd700;
+}
+
+#helloandwelcome {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#helloandwelcometext {
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#moreaboutmebutton {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: #efefef;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c5f69;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#moreaboutmebutton:hover {
+    background-color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+#myapps {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#myappscontainer {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#myappsfitnesszone,
+#myappspingoraintranet,
+#myappstravelmanager {
+    display: flex;
+    flex-direction: column;
+}
+
+#myappsfitnesszone,
+#myappspingoraintranet {
+    margin-right: 25px;
+}
+
+.appbox {
+    width: 250px;
+    height: 150px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appname {
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.apptype {
+    margin-bottom: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.appbox > a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#testimonials {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.testimonialauthor {
+    font-size: 13px;
+    color: #a0a09f;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+#whatiwant {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#companyqualities {
+    text-align: center;
+    line-height: 1.8;
+}
+
+#finalcomment {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/*White container box on Fun Facts, Portfolio, Resume & Contact pages*/
+.containerbox {
+    width: 740px;
+    height: 240px;
+    /*width: 600px;*/
+    /*height: 200px;*/
+    margin-top: 100px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Quote on Fun Facts, Portfolio, Resume & Contact pages*/
+.quote {
+    /*font-size: 30px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 2px;*/
+    /*line-height: 2;*/
+}
+
+/*==================== ABOUT ====================*/
+#aboutaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/au_02_about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#myclosefriends,
+#currentlywatching,
+#bestadvice,
+#dreamjob,
+#cantlivewithout,
+#afewotherthings,
+#enfj {
+    max-width: 100%;
+}
+
+#myclosefriendsgroup {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#myclosefriendsgroup > img {
+    width: 140px;
+    height: 150px;
+    margin-right: 25px;
+}
+
+#myclosefriendslist {
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+    /*list-style-type: none;*/
+}
+
+#currentlywatching > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+}
+
+#bestadvice > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+}
+
+#dreamjob > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+}
+
+#cantlivewithoutgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cantlivewithoutgroup > ul {
+    margin-right: 25px;
+    margin-bottom: 75px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+    /*list-style-type: none;*/
+}
+
+.flexslider {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.slides img {
+    width: 200px;
+    height: 300px;
+}
+
+#afewotherthings > ul {
+    margin-bottom: 50px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+    /*list-style-type: none;*/
+}
+
+#enfj > div {
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+}
+
+#enfjbutton {
+    border: none;
+    background-color: #ffffff;
+    /*font-size: 14px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 1.5;*/
+}
+
+#enfjbutton:hover {
+    background-color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+
+/*==================== PORTFOLIO ====================*/
+#portfolioaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/au_03_portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#fitnesszone,
+#pingoraintranet,
+#travelmanager {
+    max-width: 100%;
+}
+
+#fitnesszonegroup,
+#pingoraintranetgroup,
+#travelmanagergroup {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.appdescription,
+.toolsused {
+    margin-bottom: 25px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+    /*letter-spacing: 1px;*/
+    /*line-height: 1.5;*/
+}
+
+.projectgithublink {
+    margin-bottom: 50px;
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+    /*letter-spacing: 1px;*/
+    /*line-height: 1.5;*/
+}
+
+#keyachievements {
+    /*font-size: 15px;*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+    /*letter-spacing: 1px;*/
+    /*line-height: 1.5;*/
+}
+
+#fitnesszoneimages > img {
+    width: 250px;
+    height: 450px;
+    margin-right: 25px;
+}
+
+#pingoraintranetimages > img {
+    width: 450px;
+    height: 560px;
+    margin-right: 25px;
+}
+
+#travelmanagerimages > img {
+    width: 450px;
+    height: 300px;
+    margin-right: 25px;
+}
+
+
+/*==================== RESUME ====================*/
+#resumeaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/au_04_resume.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#downloadresume {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#downloadresumebutton {
+    width: 300px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #efefef;
+    border: none;
+    /*font-size: 13px;*/
+    /*font-weight: 400;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 1px;*/
+}
+
+#downloadresumebutton:hover {
+    background-color: #1c5f69;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+#technicalskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#technicalskills > span {
+    margin-bottom: 25px;
+}
+
+
+#relevantcourses {
+
+}
+
+#education {
+
+}
+
+#workexperience {
+
+}
+
+
+/*==================== CONTACT ====================*/
+#contactaupic {
+    max-width: 100%;
+    height: 700px;
+    background-color: #1c5f69;
+    background-image: url(../img/au_05_contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#contacttext {
+
+}
+
+#contactform {
+
+}
+
+
