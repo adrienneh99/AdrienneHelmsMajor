@@ -31,7 +31,7 @@
 
         <script>
             $(function () {
-                $('.flexslider').flexslider({
+                $('#funFactsSlider').flexslider({
                     //Default settings
                     animation: "fade",
                     animationLoop: true,
@@ -42,10 +42,14 @@
                     animationSpeed: 1000,
                     initDelay: 0,
                     randomize: true,
+                    fadeFirstSlide: false,
                     //Usability features
                     useCSS: true,
                     //Primary controls
-                    controlNav: false
+                    controlNav: false,
+                    directionNav: false,
+                    //Special properties
+                    controlsContainer: '.flex-control-nav-container'
                 });
             });
         </script>
@@ -60,9 +64,9 @@
         </p>
         <![endif]-->
 
-        <header id="pageheader">
-            <nav id="headercontainer">
-                <span id="headername">Adrienne Helms Major</span>
+        <header id="pageHeader">
+            <nav id="headerContainer">
+                <span id="headerName">Adrienne Helms Major</span>
                 <a class="push" href="index.html">Home</a>
                 <a class="active" href="funfacts.html">Fun Facts</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -71,21 +75,21 @@
             </nav>
         </header>
 
-        <main class="pagebody">
+        <main class="pageBody">
 
-            <section id="aboutaupic">
-                <div class="containerbox">
+            <section id="aboutAuPic">
+                <div class="containerBox">
                     <div class="quote">When life gets you down...<br/>Just keep swimming!</div>
                 </div>
             </section>
 
             <hr>
 
-            <section id="myclosefriends">
+            <section id="myCloseFriends">
                 <h3>My Close Friends Describe Me As...</h3>
-                <div id="myclosefriendsgroup">
+                <div id="myCloseFriendsGroup">
                     <img src="../img/img_ahm.jpg">
-                    <ul id="myclosefriendslist">
+                    <ul id="myCloseFriendsList">
                         <li>Dedicated</li>
                         <li>Focused</li>
                         <li>Versatile</li>
@@ -96,7 +100,7 @@
 
             <hr>
 
-            <section id="currentlywatching">
+            <section id="currentlyWatching">
                 <h3>I'm Currently Watching...</h3>
                 <div>
                     Stranger Things 2, Grey's Anatomy, The Good Doctor & Wisdom of the Crowd
@@ -105,7 +109,7 @@
 
             <hr>
 
-            <section id="bestadvice">
+            <section id="bestAdvice">
                 <h3>The Best Piece Of Advice I Ever Received...</h3>
                 <div>
                     "Just try. The worst thing they can say is no." (Thanks Mom!)
@@ -114,7 +118,7 @@
 
             <hr>
 
-            <section id="dreamjob">
+            <section id="dreamJob">
                 <h3>My Dream Job...</h3>
                 <div>
                     Is to be a professional singer. Karaoke anyone?
@@ -123,9 +127,9 @@
 
             <hr>
 
-            <section id="cantlivewithout">
+            <section id="cantLiveWithout">
                 <h3>I Can't Live Without...</h3>
-                <div id="cantlivewithoutgroup">
+                <div id="cantLiveWithoutGroup">
                     <ul>
                         <li>Cherry Lime La Croix</li>
                         <li>My friends & family</li>
@@ -137,7 +141,7 @@
                         <li>Vinny & Folsom (my furbabies)</li>
                         <li>Traveling (favorite place is Australia)</li>
                     </ul>
-                    <div class="flexslider">
+                    <div id="funFactsSlider" class="flexslider">
                         <ul class="slides">
                             <li><img src="../img/img_family_01.jpg"/></li>
                             <li><img src="../img/img_family_02.jpg"/></li>
@@ -158,7 +162,7 @@
 
             <hr>
 
-            <section id="afewotherthings">
+            <section id="aFewOtherThings">
                 <h3>A Few Other Things You Should Know About Me...</h3>
                 <ul>
                     <li>I appreciate directness and I'm receptive to constructive criticism.</li>
@@ -175,7 +179,7 @@
                 <div>
                     Check this out:
                     <a href="https://www.16personalities.com/enfjs-at-work" target="_blank">
-                        <button id="enfjbutton">ENFJ</button>
+                        <button id="enfjButton">ENFJ</button>
                     </a>
                 </div>
             </section>
@@ -189,7 +193,7 @@
             <a href="https://github.com/adrienneh99" target="_blank">
                 <img src="../img/ic_github_mark.png">
             </a>
-            <a href="contact.html#contactform" target="_blank">
+            <a href="contact.html#contactForm" target="_blank">
                 <img src="../img/ic_email_white.png">
             </a>
         </footer>
