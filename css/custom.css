@@ -43,7 +43,6 @@ h3 {
 /*
  *Portfolio: Android Mobile App, Fictional Website, Desktop & Web App
  *Resume: Programming Languages...Regis University...2013-2016
- *Contact: I'm dedicated to make a difference...
  */
 h4 {
     font-size: 20px;
@@ -152,7 +151,6 @@ footer a:hover {
 
 /*==================== HOME ====================*/
 #homeaupic {
-    max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
     background-image: url(../img/au_01_home.jpg);
@@ -283,13 +281,10 @@ footer a:hover {
 
 .apptype {
     margin-bottom: 25px;
-    font-size: 15px;
-    letter-spacing: 1px;
 }
 
 .appbox > a {
     font-size: 13px;
-    font-weight: 600;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -355,16 +350,15 @@ footer a:hover {
 
 /*Quote on Fun Facts, Portfolio, Resume & Contact pages*/
 .quote {
-    /*font-size: 30px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 2px;*/
-    /*line-height: 2;*/
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.8;
 }
 
 /*==================== ABOUT ====================*/
 #aboutaupic {
-    max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
     background-image: url(../img/au_02_about.jpg);
@@ -381,16 +375,14 @@ footer a:hover {
 #currentlywatching,
 #bestadvice,
 #dreamjob,
-#cantlivewithout,
 #afewotherthings,
 #enfj {
-    max-width: 100%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 #myclosefriendsgroup {
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -404,45 +396,21 @@ footer a:hover {
 }
 
 #myclosefriendslist {
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
-    /*list-style-type: none;*/
+    text-align: center;
+    line-height: 1.8;
+    list-style-type: none;
 }
 
-#currentlywatching > div {
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
-}
-
-#bestadvice > div {
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
-}
-
+#currentlywatching > div,
+#bestadvice > div,
 #dreamjob > div {
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
+    text-align: center;
+    line-height: 1.8;
+}
+
+#cantlivewithout {
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 #cantlivewithoutgroup {
@@ -455,12 +423,9 @@ footer a:hover {
 #cantlivewithoutgroup > ul {
     margin-right: 25px;
     margin-bottom: 75px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
-    /*list-style-type: none;*/
+    text-align: center;
+    line-height: 1.8;
+    list-style-type: none;
 }
 
 .flexslider {
@@ -476,34 +441,24 @@ footer a:hover {
 }
 
 #afewotherthings > ul {
-    margin-bottom: 50px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
-    /*list-style-type: none;*/
+    text-align: center;
+    line-height: 1.8;
+    list-style-type: none;
 }
 
 #enfj > div {
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    /*font-size: 15px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
+    text-align: center;
+    line-height: 1.8;
 }
 
 #enfjbutton {
-    border: none;
     background-color: #ffffff;
-    /*font-size: 14px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1.5px;*/
-    /*line-height: 1.5;*/
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c5f69;
+    letter-spacing: 1px;
+    line-height: 1.8;
 }
 
 #enfjbutton:hover {
@@ -515,7 +470,6 @@ footer a:hover {
 
 /*==================== PORTFOLIO ====================*/
 #portfolioaupic {
-    max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
     background-image: url(../img/au_03_portfolio.jpg);
@@ -528,22 +482,14 @@ footer a:hover {
     align-items: flex-start;
 }
 
-#fitnesszone,
-#pingoraintranet,
-#travelmanager {
-    max-width: 100%;
-}
-
 #fitnesszonegroup,
 #pingoraintranetgroup,
 #travelmanagergroup {
-    margin-top: 50px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
+    margin: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .appdescription,
@@ -594,7 +540,6 @@ footer a:hover {
 
 /*==================== RESUME ====================*/
 #resumeaupic {
-    max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
     background-image: url(../img/au_04_resume.jpg);
@@ -661,7 +606,6 @@ footer a:hover {
 
 /*==================== CONTACT ====================*/
 #contactaupic {
-    max-width: 100%;
     height: 700px;
     background-color: #1c5f69;
     background-image: url(../img/au_05_contact.jpg);
