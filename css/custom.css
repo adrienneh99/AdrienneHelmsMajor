@@ -2,6 +2,11 @@
    AUTHOR'S CUSTOM STYLES
    ========================================================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     width: 100%;
@@ -21,8 +26,9 @@ body {
  */
 h2 {
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -33,8 +39,9 @@ h2 {
  */
 h3 {
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -45,17 +52,16 @@ h3 {
  *Resume: Programming Languages...Regis University...2013-2016
  */
 h4 {
+    margin-bottom: 20px;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 0.5;
 }
 
 hr {
     height: 50px;
-    margin: 0;
     background-color: #1c5f69;
 }
 
@@ -70,14 +76,14 @@ hr {
     and the left edge of its containing block (ie, the body)*/
     left: 0;
     background-color: #1c5f69;
+    box-shadow: 0 5px 5px -3px #ffffff;
 }
 
 #headerContainer {
-    margin-top: 0;
-    margin-right: 100px;
-    margin-bottom: 0;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
+    /*horizontal alignment*/
     justify-content: space-around;
 }
 
@@ -126,14 +132,14 @@ footer {
     background-color: #1c5f69;
     text-align-all: center;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: center;
 }
 
 footer a {
-    padding-top: 0;
     padding-right: 15px;
-    padding-bottom: 0;
     padding-left: 15px;
     opacity: 0.5;
 }
@@ -159,7 +165,9 @@ footer a:hover {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: flex-start;
 }
 
@@ -171,7 +179,9 @@ footer a:hover {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
@@ -203,16 +213,18 @@ footer a:hover {
 }
 
 #helloAndWelcome {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
 #helloAndWelcomeText {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: justify;
     line-height: 1.8;
 }
@@ -237,8 +249,8 @@ footer a:hover {
 }
 
 #myApps {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 #myAppsContainer {
@@ -246,7 +258,9 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /*horizontal alignment*/
     justify-content: space-around;
+    /*vertical alignment*/
     align-items: center;
 }
 
@@ -263,7 +277,9 @@ footer a:hover {
     background-color: #efefef;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
@@ -285,12 +301,14 @@ footer a:hover {
 }
 
 #testimonials {
-    margin-right: 100px;
+    margin-right: 50px;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
@@ -308,12 +326,14 @@ footer a:hover {
 }
 
 #whatImLookingFor {
-    margin-right: 100px;
+    margin-right: 50px;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
@@ -322,10 +342,10 @@ footer a:hover {
     line-height: 1.8;
 }
 
-#finalComment {
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 1px;
+#whatImLookingFor > h4 {
+    margin-bottom: 0;
+    text-transform: none;
+    /*font-variant: small-caps;*/
 }
 
 /*White container box on Fun Facts, Portfolio, Resume & Contact pages*/
@@ -338,7 +358,9 @@ footer a:hover {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    /*vertical alignment*/
     justify-content: center;
+    /*horizontal alignment*/
     align-items: center;
 }
 
@@ -361,7 +383,9 @@ footer a:hover {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: flex-start;
 }
 
@@ -371,22 +395,24 @@ footer a:hover {
 #dreamJob,
 #aFewOtherThings,
 #enfj {
-    margin-right: 100px;
+    margin-right: 50px;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #myCloseFriendsGroup {
     display: flex;
     flex-direction: row;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: center;
 }
 
 #myCloseFriendsGroup > img {
     width: 140px;
     height: 150px;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 #myCloseFriendsList {
@@ -403,20 +429,22 @@ footer a:hover {
 }
 
 #cantLiveWithout {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 #cantLiveWithoutGroup {
     display: flex;
     flex-direction: row;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: center;
 }
 
 #cantLiveWithoutGroup > ul {
-    margin-right: 25px;
-    margin-bottom: 75px;
+    margin-right: 20px;
     text-align: center;
     line-height: 1.8;
     list-style-type: none;
@@ -425,7 +453,8 @@ footer a:hover {
 #funFactsSlider {
     width: 200px;
     height: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    border-width: 0;
     z-index: -1;
 }
 
@@ -472,31 +501,38 @@ footer a:hover {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: flex-start;
 }
 
 #fitnessZone,
 #pingoraIntranet,
 #travelManager {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 #fitnessZoneGroup,
-#pingoraIntranetGroup {
+#pingoraIntranetGroup,
+#travelManagerGroup {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    /*horizontal alignment*/
     justify-content: center;
-    align-items: flex-start;
+    /*vertical alignment*/
+    align-items: center;
 }
 
 #fitnessZoneSlider {
     width: 250px;
     height: 450px;
-    margin-top: 15px;
-    margin-right: 25px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    border-width: 0;
     z-index: -1;
 }
 
@@ -505,22 +541,26 @@ footer a:hover {
     height: 450px;
 }
 
-#fitnessZoneText,
-#pingoraIntranetText,
-#travelManagerText {
-    margin-top: 15px;
+#keyAchievements {
+    margin-bottom: 20px;
+    padding-left: 40px;
 }
 
 #keyAchievements > li {
+    margin-bottom: 10px;
     line-height: 1.8;
+}
+
+#keyAchievements > li:last-child {
+    margin-bottom: 0;
 }
 
 #pingoraIntranetSlider {
     width: 350px;
     height: 450px;
-    margin-top: 15px;
-    margin-right: 25px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    border-width: 0;
     z-index: -1;
 }
 
@@ -529,33 +569,26 @@ footer a:hover {
     height: 450px;
 }
 
-#travelManager {
-    margin-bottom: 50px;
-}
-
 .appDescription {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: justify;
     line-height: 1.8;
 }
 
 #fitnessZoneText > .appDescription {
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 
 .toolsUsed {
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .toolsUsed > ul {
+    margin-top: 10px;
+    padding-left: 40px;
     line-height: 1.8;
     list-style: none;
     columns: 3;
-}
-
-.toolsUsed > ul:first-child {
-    margin-top: 0;
 }
 
 .projectGithubLink {
@@ -573,16 +606,19 @@ footer a:hover {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: flex-start;
 }
 
 #downloadResume {
-    width: 100%;
     height: auto;
     display: flex;
-    align-items: center;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
+    align-items: center;
 }
 
 #downloadResumeButton {
@@ -592,11 +628,11 @@ footer a:hover {
     margin-bottom: 50px;
     background-color: #efefef;
     border: none;
-    /*font-size: 13px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-    /*text-transform: uppercase;*/
-    /*letter-spacing: 1px;*/
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c5f69;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #downloadResumeButton:hover {
@@ -606,26 +642,165 @@ footer a:hover {
 }
 
 #technicalSkills {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.technicalSkillsContainer {
+    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /*horizontal alignment*/
+    justify-content: center;
+    /*vertical alignment*/
     align-items: center;
 }
 
-#technicalSkills > span {
-    margin-bottom: 25px;
+.technicalSkillsContainer:last-child {
+    margin-bottom: 0;
 }
 
+.technicalSkillsContainer > h4 {
+    width: 440px;
+    margin-right: 25px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: end;
+    display: flex;
+    /*horizontal alignment*/
+    justify-content: flex-end;
+}
+
+.technicalSkillsContainer > div {
+    width: 415px;
+    line-height: 1.8;
+}
 
 #relevantCourses {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 
+#relevantCourses > ul {
+    text-align: center;
+    line-height: 1.8;
+    list-style: none;
+    columns: 2;
 }
 
 #education {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 
+#educationGroup {
+    text-align: center;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: row;
+    /*horizontal alignment*/
+    justify-content: space-evenly;
+    /*vertical alignment*/
+    align-items: center;
+}
+
+.school {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.degree {
+    letter-spacing: 2px;
 }
 
 #workExperience {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 
+#workExperienceIntro {
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#workExperienceTimeline {
+    display: flex;
+    flex-direction: column;
+    /*vertical alignment*/
+    justify-content: flex-start;
+    /*horizontal alignment*/
+    align-items: center;
+}
+
+.workExperienceBox {
+    display: flex;
+}
+
+.workExperienceBox > h4 {
+    width: 115px;
+    height: 80px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.divider {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    /*vertical alignment*/
+    justify-content: flex-start;
+    /*horizontal alignment*/
+    align-items: center;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    background-color: #1c5f69;
+    border-radius: 50%;
+}
+
+.verticalLine {
+    width: 2px;
+    height: 70px;
+    background-color: #efefef;
+}
+
+.workExperienceText {
+    width: 385px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    /*vertical alignment*/
+    justify-content: flex-start;
+    /*horizontal alignment*/
+    align-items: flex-start;
+}
+
+.company {
+    font-size: 15px;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+}
+
+.role {
+    font-size: 15px;
+}
+
+#lastHeader,
+#lastDivider,
+#lastText {
+    height: auto;
 }
 
 
@@ -639,16 +814,81 @@ footer a:hover {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    /*horizontal alignment*/
     justify-content: center;
+    /*vertical alignment*/
     align-items: flex-start;
 }
 
-#contactText {
+#contactGroup {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 
+#contactGroup > h4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: none;
 }
 
 #contactForm {
-
+    width: 500px;
+    margin: 0 auto;
+    /*padding: 1em;*/
+    /*border: 1px solid #1c5f69;*/
+    /*border-radius: 1em;*/
 }
 
+#contactForm > div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /*horizontal alignment*/
+    justify-content: center;
+    /*vertical alignment*/
+    align-items: flex-start;
+}
 
+label {
+    width: 100px;
+    /*text-align: right;*/
+}
+
+#formButton {
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c5f69;
+    box-sizing: border-box;
+    border: 1px solid #1c5f69;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    width: 400px;
+    font-family: 'Nunito Sans', Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c5f69;
+    box-sizing: border-box;
+    border: 1px solid #1c5f69;
+    /*background-color: #efefef;*/
+}
+
+input:focus,
+textarea:focus,
+#formButton:focus {
+    border-color: #1c5f69;
+    outline: none;
+    box-shadow: 0 0 10px #b2d4da;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}

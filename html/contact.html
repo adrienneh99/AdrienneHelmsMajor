@@ -51,28 +51,31 @@
             <hr>
 
             <section id="contactGroup">
-                <div id="contactText">
-                    I'm dedicated to make a difference and would love to be part of your team. Send me a message and
-                    let me know how I can help!
-                </div>
-                <form id="contactForm">
-                    Name
+                <h4>
+                    I'm dedicated to make a difference and would love to be part of your team.
                     <br/>
-                    <input type="text" name="fullname">
-                    <br/>
-                    Email
-                    <br/>
-                    <input type="email" name="email">
-                    <br/>
-                    Subject
-                    <br/>
-                    <input type="text" name="subject">
-                    <br/>
-                    Message
-                    <br/>
-                    <textarea name="message" rows="10" cols="50"></textarea>
-                    <br/>
-                    <input type="submit" value="Send">
+                    Send me a message and let me know how I can help!
+                </h4>
+                <form id="contactForm" action="" method="post">
+                    <div>
+                        <label for="formName">Name</label>
+                        <input type="text" id="formName" name="fullname">
+                    </div>
+                    <div>
+                        <label for="formEmail">Email</label>
+                        <input type="email" id="formEmail" name="email">
+                    </div>
+                    <div>
+                        <label for="formSubject">Subject</label>
+                        <input type="text" id="formSubject" name="subject">
+                    </div>
+                    <div>
+                        <label for="formMessage">Message</label>
+                        <textarea id="formMessage" name="message"></textarea>
+                    </div>
+                    <div>
+                        <button id="formButton" type="submit">Send</button>
+                    </div>
                 </form>
             </section>
 

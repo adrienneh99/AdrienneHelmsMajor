@@ -33,23 +33,24 @@
             $(function () {
                 $('#funFactsSlider').flexslider({
                     //Default settings
-                    animation: "fade",
+                    animation: "slide",
                     animationLoop: true,
                     smoothHeight: true,
                     startAt: 0,
                     slideshow: true,
-                    slideshowSpeed: 4000,
+                    slideshowSpeed: 3000,
                     animationSpeed: 1000,
                     initDelay: 0,
                     randomize: true,
-                    fadeFirstSlide: false,
                     //Usability features
                     useCSS: true,
                     //Primary controls
                     controlNav: false,
                     directionNav: false,
                     //Special properties
-                    controlsContainer: '.flex-control-nav-container'
+                    controlsContainer: '.flex-control-nav-container',
+                    //Carousel options
+                    itemWidth: 200
                 });
             });
         </script>
@@ -133,13 +134,13 @@
                     <ul>
                         <li>Cherry Lime La Croix</li>
                         <li>My friends & family</li>
-                        <li>Games & puzzles (especially Mahjong)</li>
+                        <li>Mahjong...really any games or puzzles</li>
                         <li>Chocolate</li>
-                        <li>My husband (because he makes me laugh)</li>
+                        <li>My hilarious husband</li>
                         <li>Houzz & HGTV</li>
                         <li>Bubbly</li>
-                        <li>Vinny & Folsom (my furbabies)</li>
-                        <li>Traveling (favorite place is Australia)</li>
+                        <li>My furbabies...Vinny & Folsom</li>
+                        <li>Traveling...favorite place is Australia</li>
                     </ul>
                     <div id="funFactsSlider" class="flexslider">
                         <ul class="slides">
@@ -163,7 +164,7 @@
             <hr>
 
             <section id="aFewOtherThings">
-                <h3>A Few Other Things You Should Know About Me...</h3>
+                <h3>A Few Other Things...</h3>
                 <ul>
                     <li>I appreciate directness and I'm receptive to constructive criticism.</li>
                     <li>I believe that effective communication is the key to every successful relationship.</li>
